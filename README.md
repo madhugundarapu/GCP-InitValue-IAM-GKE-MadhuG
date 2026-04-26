@@ -1,6 +1,6 @@
 # GKE Terraform Project (Task 1)
 
-## 🚀 Overview
+##  Overview
 This project provisions a Google Kubernetes Engine (GKE) cluster using Terraform with:
 
 - Custom Node Pool
@@ -8,7 +8,7 @@ This project provisions a Google Kubernetes Engine (GKE) cluster using Terraform
 - IAM roles with least privilege
 - Nginx deployment exposed via LoadBalancer
 
-## 🏗️ Architecture
+##  Architecture
 - GKE Cluster (us-east1)
 - Node Pool (e2-medium, 30GB disk)
 - IAM Roles:
@@ -17,7 +17,7 @@ This project provisions a Google Kubernetes Engine (GKE) cluster using Terraform
   - DevOps → container.admin
   - CI/CD → container.developer
 
-## ⚙️ Steps to Run
+##  Steps to Run
 
 ```bash
 terraform init
