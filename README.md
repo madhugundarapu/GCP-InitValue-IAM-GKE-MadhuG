@@ -22,3 +22,22 @@ This project provisions a Google Kubernetes Engine (GKE) cluster using Terraform
 ```bash
 terraform init
 terraform apply
+📦 Deploy Sample App
+kubectl create deployment nginx --image=nginx
+kubectl expose deployment nginx --type=LoadBalancer --port=80
+🌐 Access
+
+Get external IP:
+
+kubectl get svc
+
+Open in browser:
+http://<EXTERNAL-IP>
+
+🧹 Cleanup
+terraform destroy -auto-approve
+🧠 Key Learnings
+GKE provisioning with Terraform
+Node pool management
+IAM role-based access control
+Handling quota and deletion protection issues
